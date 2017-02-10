@@ -54,13 +54,17 @@ alias sublime="~/bin/sublime"
 alias subl = "sublime"
 
  #git
+alias git="git"
+alias gdf="git diff"
 alias gst="git status -s"
+alias glog="git log --follow -p --"
 
 #download
 alias yt2mp3="youtube-dl -x --audio-format mp3 --audio-quality 0"
 
 #npm
 alias npmd="npm run develop"
+alias npmlg="npm list -g --depth=0"
 
 #webpack
 alias wbpc="webpack --watch --progress --colors --display-error-details"
@@ -71,4 +75,7 @@ alias mixchrome="open /Applications/Google\ Chrome.app --args --allow-running-in
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+#edit hosts
+alias ehost="sudo nano /etc/hosts"
 
